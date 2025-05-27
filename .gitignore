@@ -1,4 +1,9 @@
-__pycache__
-*/__pycache__
-*/*/__pycache__
-*/db.sqlite3
+# Ignore all __pycache__ folders recursively
+**/__pycache__/
+
+# Ignore compiled Python files
+*.py[cod]
+
+# Ignore SQLite database file(s)
+db.sqlite3
+**/db.sqlite3
