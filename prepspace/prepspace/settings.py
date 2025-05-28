@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'daily_tasks',
-    'syllabus_tracker'
+    'syllabus_tracker',
+    'tailwind',
+    'theme'
 ]
 
 MIDDLEWARE = [
@@ -57,8 +59,8 @@ ROOT_URLCONF = 'prepspace.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
-        'APP_DIRS': True,
+        'DIRS': [],
+        'APP_DIRS': True, # to tell django to look inside templates folder inside each app registered under django
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -89,9 +91,13 @@ DATABASES = {
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "syllabus_tracker",'media')
 MEDIA_URL = '/media/'
-print("****************************")
-print(BASE_DIR)
-print("************************")
+
+
+# Tailwind App Name
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS  = ['127.0.0.1']
+NPM_BIN_PATH = r'C:\Program Files\nodejs\npm.cmd'
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
