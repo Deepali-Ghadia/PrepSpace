@@ -10,9 +10,27 @@
 	</head>
 
 	<body>
-		<div>
-			<p class=" text-3xl bg-blue-300">Welcome to PrepSpace</p>
-		</div>
+		<!-- navbar is a collection of links -->
+		<nav class="p-3 flex justify-between items-center bg-teal-200">
+			<a href="#"><img src="{% static 'images/logo.png' %}" alt="PrepSpace Logo" class="h-20 w-max"></a>
+			<div class="flex flex-col items-center">
+				<!-- flex col is to align flex items vertically -->
+  				<span class="text-5xl font-bold leading-tight">PrepSpace</span>
+  				<span class="text-center">Your Personal Productivity Workspace</span>
+				<!-- div is block element while span is inline element -->
+			</div>
+			<a href="#"><img src="{% static 'images/profile.png' %}" alt="Profile" class="h-20 w-max"></a>
+		</nav>
+		
+	
+		<!-- buttons section -->
+		 <div class="flex justify-between text-center p-3">
+			<button class="px-4 py-1 rounded-3xl bg-teal-500">Dashboard</button>
+			<button class="px-4 py-1 rounded-3xl bg-teal-500">Syllabus</button>
+			<button class="px-4 py-1 rounded-3xl bg-teal-500">To Do</button>
+			<button class="px-4 py-1 rounded-3xl bg-teal-500">BrainDump</button>
+			<button class="px-4 py-1 rounded-3xl bg-teal-500">Login/Signup</button>
+		 </div>
 		
 	</body>
 </html>
