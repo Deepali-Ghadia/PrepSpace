@@ -10,3 +10,18 @@ db.sqlite3
 
 # ignore media files
 */*/media
+
+
+# Node modules (very large, can be reinstalled)
+*/theme/node_modules/
+
+
+# Build output
+*/theme/static/css/dist/
+
+# Tailwind cache files (if any)
+*/theme/.tailwindcache
+
+# Optional: lock files if you want to ignore
+*/theme/package-lock.json
+
