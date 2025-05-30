@@ -3,4 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home_syllabus_tracker(request):
-    return HttpResponse("Welcome to homepage of syllabus tracker")
+    return render(request,'syllabus_tracker.html' )
+
