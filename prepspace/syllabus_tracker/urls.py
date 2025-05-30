@@ -20,5 +20,6 @@ from .views import home_syllabus_tracker
 
 urlpatterns = [
     path('', home_syllabus_tracker, name='syllabus'),
+    # name is used while we specify the url to be hit when we want to redirect to this page i.e syllabus_tracker/
     
 ]
