@@ -19,6 +19,6 @@ from django.urls import path, include
 from .views import home_syllabus_tracker
 
 urlpatterns = [
-    path('', home_syllabus_tracker),
+    path('', home_syllabus_tracker, name='syllabus'),
     
 ]
