@@ -5,5 +5,5 @@ from .models import Subject
 # Create your views here.
 def home_syllabus_tracker(request):
     subjects = Subject.objects.all()
-    return render(request,'syllabus_tracker.html',{'subjects': subjects} )
+    return render(request,'syllabus_overview.html',{'subjects': subjects} )
 
